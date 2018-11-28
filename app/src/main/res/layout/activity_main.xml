@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:scanView="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context="com.webank.mbank.animationproject.MainActivity">
+
+    <com.webank.mbank.facescan.ScanView
+        android:id="@+id/scan_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        scanView:ciclr_radius="2"
+        scanView:horizontal_square_number="35"
+        scanView:scan_period="20"
+        scanView:scan_step="10"
+        scanView:vertical_square_number="15"/>
+
+    <Button
+        android:id="@+id/stop_scan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="10dp"
+        android:text="停止"/>
+
+    <Button
+        android:id="@+id/scan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:layout_toLeftOf="@+id/stop_scan"
+        android:text="扫一扫"/>
+
+
+</RelativeLayout>

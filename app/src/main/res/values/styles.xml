@@ -1,0 +1,26 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <declare-styleable name="ScanView">
+        <!-- 扫描线改变的步长 -->
+        <attr name="scan_step_dp" format="integer" />
+        <!-- 扫描任务执行的间隔 -->
+        <attr name="scan_period" format="integer" />
+        <!-- 绘制的竖向网格数量 -->
+        <attr name="vertical_square_number" format="integer" />
+        <!-- 绘制的横向网格数量 -->
+        <attr name="horizontal_square_number" format="integer" />
+        <!-- 网格中圆的半径 -->
+        <attr name="ciclr_radius_dp" format="integer" />
+        <!-- 画笔粗细 -->
+        <attr name="paint_width" format="integer" />
+    </declare-styleable>
+
+</resources>
